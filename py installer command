@@ -1,1 +1,6 @@
 pip install -r requirements.txt --upgrade ; pip install pyinstaller --upgrade ; Remove-Item -Recurse -Force build, dist -ErrorAction SilentlyContinue ; pyinstaller HypeERP.spec --clean --noconfirm
+
+
+
+
+python -m PyInstaller HypeERP.spec --clean --noconfirm 2>&1 | findstr /i 
