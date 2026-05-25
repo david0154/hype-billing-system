@@ -29,13 +29,13 @@ try:
 except ImportError:
     HAS_WIN32 = False
 
-# ── Branding ───────────────────────────────────────────────────────────────
+# ── Branding ───────────────────────────────────────────────────────────────────
 HYPE_ERP_NAME    = 'Hype ERP'
 HYPE_ERP_VERSION = 'v3.0.0'
 HYPE_ERP_TAGLINE = 'Enterprise Resource Planning System'
 HYPE_ERP_FOOTER  = f'Powered by {HYPE_ERP_NAME} | All rights reserved | {HYPE_ERP_VERSION}'
 
-# ── Colours (design system) ───────────────────────────────────────────────
+# ── Colours (design system) ───────────────────────────────────────────────────
 C_BG       = '#0b0c1a'   # main background
 C_SURFACE  = '#12142a'   # cards / panels
 C_HEADER   = '#111327'   # top bar
@@ -52,7 +52,7 @@ C_BORDER   = '#1e2038'
 FONT_UI    = 'Segoe UI'
 CURRENCY   = '₹'
 
-# ── Optional Module Imports ──────────────────────────────────────────────
+# ── Optional Module Imports ─────────────────────────────────────────────────
 try:
     from about import show_about as _show_about_fn
     HAS_ABOUT = True
@@ -124,7 +124,7 @@ except ImportError:
     HAS_BILLING_MODULE = False
     BillingWindow = None
 
-# ── State ─────────────────────────────────────────────────────────────────────────────
+# ── State ─────────────────────────────────────────────────────────────────────
 CURRENT_USER    = None
 CURRENT_ROLE    = None
 FIREBASE_SYNC   = None
