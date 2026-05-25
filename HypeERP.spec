@@ -74,9 +74,7 @@ a = Analysis(
     hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
-    # freeze_support runtime hook ensures multiprocessing child processes
-    # (spawned by sklearn/joblib) do NOT open a second login window on Windows
-    runtime_hooks=[],
+    runtime_hooks=['pyi_rth_multiprocessing.py'],
     excludes=[],
     noarchive=False,
     optimize=0,

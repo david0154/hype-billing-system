@@ -184,6 +184,30 @@ def setup_logging():
 
 logger = setup_logging()
 
+# ✅ Custom exception hook for windowed exe - catches unhandled exceptions
+def custom_exception_hook(exc_type, exc_value, exc_traceback):
+    """Log uncaught exceptions and show error dialog in windowed mode."""
+    if issubclass(exc_type, KeyboardInterrupt):
+        sys.__excepthook__(exc_type, exc_value, exc_traceback)
+        return
+    
+    logger.critical(
+        'Uncaught exception during startup:',
+        exc_info=(exc_type, exc_value, exc_traceback)
+    )
+    
+    # Show error in windowed mode
+    try:
+        root_err = Tk()
+        root_err.withdraw()
+        error_msg = f'{exc_type.__name__}: {exc_value}\n\nCheck logs at:\n%LOCALAPPDATA%\\HypeERP\\hype_erp.log'
+        messagebox.showerror('Application Startup Error', error_msg)
+        root_err.destroy()
+    except Exception:
+        pass
+
+sys.excepthook = custom_exception_hook
+
 # ── GST Rates ────────────────────────────────────────────────────────────────
 GST_RATES = {
     'Cosmetics':          {'SGST': 6,   'CGST': 6,   'IGST': 12},
@@ -755,24 +779,8 @@ def show_login():
     with WINDOW_CREATION_LOCK:
         logger.info('[LOGIN] show_login() called')
         
-        # Check 0: Prevent child processes from showing login (PyInstaller safety)
-        if getattr(sys, 'frozen', False):
-            # In PyInstaller, only main process should show UI
-            try:
-                pid_file = os.path.join(tempfile.gettempdir(), 'hype_erp_main.pid')
-                import os as _os
-                current_pid = _os.getpid()
-                if os.path.exists(pid_file):
-                    with open(pid_file, 'r') as f:
-                        main_pid = int(f.read().strip())
-                    if current_pid != main_pid:
-                        logger.warning(f'[LOGIN] Child process {current_pid} detected, main is {main_pid} - exiting')
-                        sys.exit(0)
-                else:
-                    with open(pid_file, 'w') as f:
-                        f.write(str(current_pid))
-            except Exception as e:
-                logger.debug(f'PID check error: {e}')
+        # ✅ REMOVED: PID file check was causing child process issues with sklearn/multiprocessing
+        # The Windows single-instance mutex (APP_INSTANCE_LOCK) is sufficient for PyInstaller
         
         # Check 1: If login is already in progress, don't do anything
         if LOGIN_IN_PROGRESS:
@@ -820,6 +828,12 @@ def show_login():
             lw.configure(bg=C_BG)
             lw.resizable(False, False)
             set_icon(lw)
+            
+            # ✅ Show window explicitly - critical for windowed exe
+            lw.deiconify()
+            lw.lift()
+            lw.focus_force()
+            
             LOGIN_WINDOW = lw
             logger.info('[LOGIN] ✅ New login window created and assigned')
         except Exception as e:
@@ -995,6 +1009,9 @@ def show_login():
     lw.bind('<Return>', lambda e: start_login_flow())
     Label(body, text=HYPE_ERP_FOOTER, bg=C_BG, fg='#2d2d4e',
           font=(FONT_UI, 7)).pack(side='bottom', pady=8)
+    
+    # ✅ Ensure window is rendered and visible before mainloop
+    lw.update_idletasks()
     lw.mainloop()
 
 # ───────────────────────────────────────────────────────────────────────────────
@@ -1856,6 +1873,12 @@ def launch_main_app():
         root.configure(bg=C_BG)
         root.state('zoomed') if sys.platform == 'win32' else None
         set_icon(root)
+        
+        # ✅ Ensure main window is visible and in foreground
+        root.deiconify()
+        root.lift()
+        root.focus_force()
+        
         apply_dark_style()
 
         # Show loading status
@@ -2271,7 +2294,17 @@ def launch_main_app():
         root.destroy()
 
     root.protocol('WM_DELETE_WINDOW', on_close)
-    root.mainloop()
+    
+    # ✅ Ensure all rendering is complete before mainloop
+    root.update_idletasks()
+    
+    # ✅ Run app with error handling for windowed exe
+    try:
+        root.mainloop()
+    except Exception as e:
+        logger.critical(f'CRITICAL ERROR in main loop: {e}', exc_info=True)
+        messagebox.showerror('Application Error', f'Critical Error:\n\n{str(e)}\n\nCheck logs at: %LOCALAPPDATA%\\HypeERP\\hype_erp.log')
+        raise
 
 # ── ENTRY POINT ───────────────────────────────────────────────────────────────────
 if __name__ == '__main__':

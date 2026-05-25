@@ -703,3 +703,149 @@
 2026-05-23 18:44:31 - __main__ - INFO - Application closing for user=arya
 2026-05-23 18:44:31 - __main__ - INFO - Shutting down Firebase sync
 2026-05-23 18:44:32 - __main__ - INFO - === Application Shutdown ===
+2026-05-23 19:32:01 - __main__ - INFO - === Hype ERP v3.0.0 Started ===
+2026-05-23 19:32:01 - __main__ - INFO - Running from: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\main.py
+2026-05-23 19:32:01 - __main__ - INFO - Database path: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db
+2026-05-23 19:32:01 - __main__ - INFO - Python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-23 19:32:01 - __main__ - INFO - Platform: win32
+2026-05-23 19:32:01 - __main__ - INFO - Frozen: False
+2026-05-23 19:32:01 - __main__ - INFO - ✅ multiprocessing.freeze_support() executed
+2026-05-23 19:32:01 - __main__ - INFO - ℹ️  pywin32 not available - single-instance lock disabled (Linux/Mac)
+2026-05-23 19:32:01 - __main__ - INFO - Initializing database
+2026-05-23 19:32:01 - __main__ - INFO - Database initialized successfully
+2026-05-23 19:32:01 - __main__ - INFO - Firebase is configured, initializing background sync
+2026-05-23 19:32:01 - __main__ - INFO - Starting Firebase background sync with store_id=1
+2026-05-23 19:32:01 - __main__ - INFO - Firebase background sync started
+2026-05-23 19:32:01 - __main__ - INFO - Showing login window
+2026-05-23 19:32:01 - __main__ - INFO - [LOGIN] show_login() called
+2026-05-23 19:32:01 - __main__ - INFO - [LOGIN] Creating new login window...
+2026-05-23 19:32:01 - __main__ - INFO - [LOGIN] ✅ New login window created and assigned
+2026-05-23 19:32:11 - __main__ - INFO - Login attempt for user=admin, db_path=C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db, credentials_path=C:\Users\MANOJK~1\AppData\Local\Temp\tmpcpwouyw4.json
+2026-05-23 19:32:11 - __main__ - INFO - Local user authentication SUCCESS for user=admin, role=admin
+2026-05-23 19:32:11 - __main__ - INFO - Local login succeeded for user=admin
+2026-05-23 19:32:11 - __main__ - INFO - Launching main app for user=admin, role=admin
+2026-05-23 19:32:11 - __main__ - INFO - Admin login detected for user=admin
+2026-05-23 19:32:11 - __main__ - INFO - Initializing Firebase sync with credentials path: C:\Users\MANOJK~1\AppData\Local\Temp\tmpka03a5ez.json, store_id=1
+2026-05-23 19:32:11 - __main__ - INFO - ✅ Firebase sync initialized successfully
+2026-05-23 19:32:11 - __main__ - INFO - 📥 Loading data from Firebase for store_id=1...
+2026-05-23 19:32:11 - __main__ - WARNING - Could not load data synchronously: 'FirebaseSync' object has no attribute 'restore_products_to_db', trying background sync...
+2026-05-23 19:32:11 - __main__ - ERROR - Error in background data load: 'FirebaseSync' object has no attribute 'restore_products_to_db'
+2026-05-23 19:36:22 - __main__ - INFO - Application closing for user=admin
+2026-05-23 19:36:22 - __main__ - INFO - Shutting down Firebase sync
+2026-05-23 19:36:28 - __main__ - INFO - === Application Shutdown ===
+2026-05-23 19:36:44 - __main__ - INFO - === Hype ERP v3.0.0 Started ===
+2026-05-23 19:36:44 - __main__ - INFO - Running from: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\main.py
+2026-05-23 19:36:44 - __main__ - INFO - Database path: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db
+2026-05-23 19:36:44 - __main__ - INFO - Python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-23 19:36:44 - __main__ - INFO - Platform: win32
+2026-05-23 19:36:44 - __main__ - INFO - Frozen: False
+2026-05-23 19:36:44 - __main__ - INFO - ✅ multiprocessing.freeze_support() executed
+2026-05-23 19:36:44 - __main__ - INFO - ℹ️  pywin32 not available - single-instance lock disabled (Linux/Mac)
+2026-05-23 19:36:44 - __main__ - INFO - Initializing database
+2026-05-23 19:36:44 - __main__ - INFO - Database initialized successfully
+2026-05-23 19:36:44 - __main__ - INFO - Firebase is configured, initializing background sync
+2026-05-23 19:36:44 - __main__ - INFO - Starting Firebase background sync with store_id=1
+2026-05-23 19:36:44 - __main__ - INFO - Firebase background sync started
+2026-05-23 19:36:44 - __main__ - INFO - Showing login window
+2026-05-23 19:36:44 - __main__ - INFO - [LOGIN] show_login() called
+2026-05-23 19:36:44 - __main__ - INFO - [LOGIN] Creating new login window...
+2026-05-23 19:36:44 - __main__ - INFO - [LOGIN] ✅ New login window created and assigned
+2026-05-23 19:36:59 - __main__ - INFO - Login attempt for user=admin, db_path=C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db, credentials_path=C:\Users\MANOJK~1\AppData\Local\Temp\tmpi11u2lg2.json
+2026-05-23 19:36:59 - __main__ - INFO - Local user authentication SUCCESS for user=admin, role=admin
+2026-05-23 19:36:59 - __main__ - INFO - Local login succeeded for user=admin
+2026-05-23 19:36:59 - __main__ - INFO - Launching main app for user=admin, role=admin
+2026-05-23 19:36:59 - __main__ - INFO - Admin login detected for user=admin
+2026-05-23 19:36:59 - __main__ - INFO - Initializing Firebase sync with credentials path: C:\Users\MANOJK~1\AppData\Local\Temp\tmppabbqtj7.json, store_id=1
+2026-05-23 19:36:59 - __main__ - INFO - ✅ Firebase sync initialized successfully
+2026-05-23 19:36:59 - __main__ - INFO - 📥 Loading data from Firebase for store_id=1...
+2026-05-23 19:37:00 - __main__ - INFO - ✅ Firebase data loaded successfully to local DB
+2026-05-23 19:38:25 - __main__ - INFO - Application closing for user=admin
+2026-05-23 19:38:25 - __main__ - INFO - Shutting down Firebase sync
+2026-05-23 19:38:29 - __main__ - INFO - === Application Shutdown ===
+2026-05-23 20:08:41 - __main__ - INFO - === Hype ERP v3.0.0 Started ===
+2026-05-23 20:08:41 - __main__ - INFO - Running from: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\main.py
+2026-05-23 20:08:41 - __main__ - INFO - Database path: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db
+2026-05-23 20:08:41 - __main__ - INFO - Python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-23 20:08:41 - __main__ - INFO - Platform: win32
+2026-05-23 20:08:41 - __main__ - INFO - Frozen: False
+2026-05-23 20:08:41 - __main__ - INFO - ✅ multiprocessing.freeze_support() executed
+2026-05-23 20:08:41 - __main__ - INFO - ✅ Single-instance mutex created successfully
+2026-05-23 20:08:41 - __main__ - INFO - Initializing database
+2026-05-23 20:08:41 - __main__ - INFO - Database initialized successfully
+2026-05-23 20:08:41 - __main__ - INFO - Firebase is configured, initializing background sync
+2026-05-23 20:08:41 - __main__ - INFO - Starting Firebase background sync with store_id=1
+2026-05-23 20:08:41 - __main__ - INFO - Firebase background sync started
+2026-05-23 20:08:41 - __main__ - INFO - Showing login window
+2026-05-23 20:08:41 - __main__ - INFO - [LOGIN] show_login() called
+2026-05-23 20:08:41 - __main__ - INFO - [LOGIN] Creating new login window...
+2026-05-23 20:08:41 - __main__ - INFO - [LOGIN] ✅ New login window created and assigned
+2026-05-23 20:08:48 - __main__ - INFO - Login attempt for user=arya, db_path=C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db, credentials_path=C:\Users\MANOJK~1\AppData\Local\Temp\tmpd4abxjnm.json
+2026-05-23 20:08:48 - __main__ - INFO - Local user authentication SUCCESS for user=arya, role=admin
+2026-05-23 20:08:48 - __main__ - INFO - Local login succeeded for user=arya
+2026-05-23 20:08:48 - __main__ - INFO - Launching main app for user=arya, role=admin
+2026-05-23 20:08:48 - __main__ - INFO - Admin login detected for user=arya
+2026-05-23 20:08:48 - __main__ - INFO - Initializing Firebase sync with credentials path: C:\Users\MANOJK~1\AppData\Local\Temp\tmp5if0jqss.json, store_id=1
+2026-05-23 20:08:48 - __main__ - INFO - ✅ Firebase sync initialized successfully
+2026-05-23 20:08:48 - __main__ - INFO - 📥 Loading data from Firebase for store_id=1...
+2026-05-23 20:08:49 - __main__ - INFO - ✅ Firebase data loaded successfully to local DB
+2026-05-23 20:09:35 - __main__ - INFO - Application closing for user=arya
+2026-05-23 20:09:35 - __main__ - INFO - Shutting down Firebase sync
+2026-05-23 20:09:38 - __main__ - INFO - === Application Shutdown ===
+2026-05-23 20:18:53 - __main__ - INFO - === Hype ERP v3.0.0 Started ===
+2026-05-23 20:18:53 - __main__ - INFO - Running from: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\main.py
+2026-05-23 20:18:53 - __main__ - INFO - Database path: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db
+2026-05-23 20:18:53 - __main__ - INFO - Python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-23 20:18:53 - __main__ - INFO - Platform: win32
+2026-05-23 20:18:53 - __main__ - INFO - Frozen: False
+2026-05-23 20:18:53 - __main__ - INFO - ✅ multiprocessing.freeze_support() executed
+2026-05-23 20:18:53 - __main__ - INFO - ✅ Single-instance mutex created successfully
+2026-05-23 20:18:53 - __main__ - INFO - Initializing database
+2026-05-23 20:18:53 - __main__ - INFO - Database initialized successfully
+2026-05-23 20:18:53 - __main__ - INFO - Firebase is configured, initializing background sync
+2026-05-23 20:18:53 - __main__ - INFO - Starting Firebase background sync with store_id=1
+2026-05-23 20:18:53 - __main__ - INFO - Firebase background sync started
+2026-05-23 20:18:53 - __main__ - INFO - Showing login window
+2026-05-23 20:18:53 - __main__ - INFO - [LOGIN] show_login() called
+2026-05-23 20:18:53 - __main__ - INFO - [LOGIN] Creating new login window...
+2026-05-23 20:18:53 - __main__ - INFO - [LOGIN] ✅ New login window created and assigned
+2026-05-23 20:19:00 - __main__ - INFO - Login attempt for user=arya, db_path=C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db, credentials_path=C:\Users\MANOJK~1\AppData\Local\Temp\tmp4chq_3zr.json
+2026-05-23 20:19:00 - __main__ - INFO - Local user authentication SUCCESS for user=arya, role=admin
+2026-05-23 20:19:00 - __main__ - INFO - Local login succeeded for user=arya
+2026-05-23 20:19:00 - __main__ - INFO - Launching main app for user=arya, role=admin
+2026-05-23 20:19:00 - __main__ - INFO - Admin login detected for user=arya
+2026-05-23 20:19:00 - __main__ - INFO - Initializing Firebase sync with credentials path: C:\Users\MANOJK~1\AppData\Local\Temp\tmpku3gi_o_.json, store_id=1
+2026-05-23 20:19:00 - __main__ - INFO - ✅ Firebase sync initialized successfully
+2026-05-23 20:19:00 - __main__ - INFO - 📥 Loading data from Firebase for store_id=1...
+2026-05-23 20:19:00 - __main__ - INFO - ✅ Firebase data loaded successfully to local DB
+2026-05-23 20:22:26 - __main__ - INFO - Application closing for user=arya
+2026-05-23 20:22:26 - __main__ - INFO - Shutting down Firebase sync
+2026-05-23 20:22:31 - __main__ - INFO - === Application Shutdown ===
+2026-05-25 10:37:14 - __main__ - INFO - === Hype ERP v3.0.0 Started ===
+2026-05-25 10:37:14 - __main__ - INFO - Running from: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\main.py
+2026-05-25 10:37:14 - __main__ - INFO - Database path: C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db
+2026-05-25 10:37:14 - __main__ - INFO - Python version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-25 10:37:14 - __main__ - INFO - Platform: win32
+2026-05-25 10:37:14 - __main__ - INFO - Frozen: False
+2026-05-25 10:37:14 - __main__ - INFO - ✅ multiprocessing.freeze_support() executed
+2026-05-25 10:37:14 - __main__ - INFO - ✅ Single-instance mutex created successfully
+2026-05-25 10:37:14 - __main__ - INFO - Initializing database
+2026-05-25 10:37:14 - __main__ - INFO - Database initialized successfully
+2026-05-25 10:37:14 - __main__ - INFO - Firebase is configured, initializing background sync
+2026-05-25 10:37:14 - __main__ - INFO - Starting Firebase background sync with store_id=1
+2026-05-25 10:37:14 - __main__ - INFO - Firebase background sync started
+2026-05-25 10:37:14 - __main__ - INFO - Showing login window
+2026-05-25 10:37:14 - __main__ - INFO - [LOGIN] show_login() called
+2026-05-25 10:37:14 - __main__ - INFO - [LOGIN] Creating new login window...
+2026-05-25 10:37:15 - __main__ - INFO - [LOGIN] ✅ New login window created and assigned
+2026-05-25 10:37:53 - __main__ - INFO - Login attempt for user=admin, db_path=C:\Users\Manoj Konark\Downloads\hype-billing-system-main (1)\hype-billing-system-main\hype_billing_system.db, credentials_path=C:\Users\MANOJK~1\AppData\Local\Temp\tmp6jaey7b_.json
+2026-05-25 10:37:53 - __main__ - INFO - Local user authentication SUCCESS for user=admin, role=admin
+2026-05-25 10:37:53 - __main__ - INFO - Local login succeeded for user=admin
+2026-05-25 10:37:53 - __main__ - INFO - Launching main app for user=admin, role=admin
+2026-05-25 10:37:53 - __main__ - INFO - Admin login detected for user=admin
+2026-05-25 10:37:53 - __main__ - INFO - Initializing Firebase sync with credentials path: C:\Users\MANOJK~1\AppData\Local\Temp\tmpurazz1mo.json, store_id=1
+2026-05-25 10:37:53 - __main__ - INFO - ✅ Firebase sync initialized successfully
+2026-05-25 10:37:53 - __main__ - INFO - 📥 Loading data from Firebase for store_id=1...
+2026-05-25 10:37:54 - __main__ - INFO - ✅ Firebase data loaded successfully to local DB
+2026-05-25 10:38:09 - __main__ - INFO - Application closing for user=admin
+2026-05-25 10:38:09 - __main__ - INFO - Shutting down Firebase sync
+2026-05-25 10:38:13 - __main__ - INFO - === Application Shutdown ===
